@@ -1,0 +1,25 @@
+/* larger.css */
+
+@media (min-width: 768px) {
+    /* Adjust styles for larger views */
+
+    /* Flex navigation menu */
+    nav ul {
+        display: flex; /* Display links horizontally */
+    }
+
+    nav li {
+        margin-right: 20px; /* Example spacing between navigation items */
+    }
+
+    /* Main section layout using CSS Grid */
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        grid-gap: 20px; /* Example gap between grid items */
+    }
+
+    .card {
+        /* Additional styles for larger views */
+    }
+}

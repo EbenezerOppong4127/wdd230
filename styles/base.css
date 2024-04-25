@@ -1,0 +1,55 @@
+/* base.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up font styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Example font from Google Fonts API */
+    font-size: 16px; /* Example font size */
+    line-height: 1.5; /* Example line height */
+}
+
+/* Set up color scheme */
+body {
+    background-color: #f0f0f0; /* Example background color */
+    color: #333; /* Example text color */
+}
+
+/* Basic layout styles */
+.container {
+    max-width: 1200px; /* Example maximum width */
+    margin: 0 auto; /* Center container horizontally */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove list bullets */
+}
+
+nav li {
+    display: block; /* Display links vertically by default */
+}
+
+/* Main section styles */
+main {
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff; /* Example card background color */
+    border-radius: 8px; /* Example border radius */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Example footer background color */
+    color: #fff; /* Example footer text color */
+    padding: 20px;
+    text-align: center;
+}
