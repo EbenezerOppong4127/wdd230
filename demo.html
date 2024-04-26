@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 1rem;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin: 1rem;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                grid-template-columns: 2fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>WDD 230: Web Frontend Development</h1>
+    <div class="container">
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <!-- List items will be populated here -->
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Information</h2>
+            <!-- Information placeholders go here -->
+        </section>
+    </div>
+</main>
+</body>
+</html>

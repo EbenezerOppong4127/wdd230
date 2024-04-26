@@ -14,22 +14,25 @@ body {
 
 /* mobile **************************/
 header {
-    background-color: #bbb;
+    background-color: #304f7f;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-header,
-main {
-    margin: 0 auto;
+span{
+    color: white;
+    font-size: 38px;
+    font-family: emoji;
 }
 
-h1 {
-    font-size: 19px;
-}
+/*header,*/
+/*main {*/
+/*    margin: 0 auto;*/
+/*}*/
+
+
 .heading-container {
     text-align: center; /* Center-align the content */
 }
@@ -43,61 +46,18 @@ h1 {
 }
 
 
-nav {
-    background-color: #36454f;
-    margin: 0 auto;
-    max-width: 100%;
-
-}
-nav ul {
-    list-style-type: none;
-}
-nav a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration:overline;
-}
-
-.active {
-    color: yellow;
-}
-
-/* Larger Views ******************************/
-@media (min-width: 640px) {
-    nav ul {
-        display: flex;
-    }
-    nav ul li {
-        flex: 1 1 100%;
-    }
-}
-
-
-
-
-
-
-main {
+.container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
 }
 
 .card {
-    background-color: #f0f0f0;
-    padding: 20px;
-    width: 369px;
-    height: 164px;
-    text-align: center;
-    color: blue;
-    margin-bottom: 50px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
 }
+
 
 
 /* Footer styles */
@@ -135,6 +95,7 @@ h2{
     margin-left: -18px;
     margin-right: -18px;
     margin-top: -19px;
+    text-align: center;
 }
 
 .infor{
@@ -144,7 +105,66 @@ h2{
     margin-left: -18px;
     margin-right: -18px;
     margin-top: -19px;
+    text-align: center;
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sansita", sans-serif;
+}
+
+/* mobile **************************/
+header {
+    background-color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-left: 261px;
+}
+
+nav {
+    background-color: #36454f;
+    margin: 0 auto;
+    max-width: 100%;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration:overline;
+}
+
+.active {
+    color: yellow;
+}
+
+
+
 
 
 

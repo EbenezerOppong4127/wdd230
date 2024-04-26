@@ -1,32 +1,16 @@
-/* larger.css */
-
-
-
-@media screen and (min-width: 768px) {
-    main {
-        grid-template-columns: 1fr 1fr;
+@media (min-width: 600px) {
+    .container {
+        grid-template-columns: 2fr 1fr;
     }
+}
 
-    .card {
-        margin-top: 0;
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
     }
-
-    .card:nth-child(1) {
-        grid-column: span 2;
-    }
-
-    .card:nth-child(2) {
-        width: calc(90% - 20px);
-    }
-
-    .card:nth-child(3) {
-        width: calc(61% - 20px);
-    }
-
-    .horizontal-line {
-        margin: 0 auto;
-        border-bottom: 1px solid black;
-
-
+    nav ul li {
+        flex: 1 1 100%;
     }
 }
