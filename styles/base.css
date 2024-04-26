@@ -187,7 +187,19 @@ nav a:hover {
     color: yellow;
 }
 
+.flower{
+    width: 19px;
+    border-radius: 19px;
+    height: 13px;
+}
 
+.flag{
+    height: 13px;
+}
+
+header img{
+    width: 55px;
+}
 
 
 
