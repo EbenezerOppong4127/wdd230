@@ -7,5 +7,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Get last modified date
     var lastModifiedDate = document.lastModified;
-    document.getElementById('lastModified').textContent = "Last modified: " + lastModifiedDate;
+    document.getElementById('lastModified').textContent = "Last modification: " + lastModifiedDate;
 });
