@@ -1,55 +1,150 @@
 /* base.css */
 
 /* Reset default margin and padding */
-body, h1, h2, h3, p, ul, li {
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Set up font styles */
 body {
-    font-family: 'Roboto', sans-serif; /* Example font from Google Fonts API */
-    font-size: 16px; /* Example font size */
-    line-height: 1.5; /* Example line height */
+    font-family: "Sansita", sans-serif;
 }
 
-/* Set up color scheme */
-body {
-    background-color: #f0f0f0; /* Example background color */
-    color: #333; /* Example text color */
-}
-
-/* Basic layout styles */
-.container {
-    max-width: 1200px; /* Example maximum width */
-    margin: 0 auto; /* Center container horizontally */
-}
-
-/* Navigation styles */
-nav ul {
-    list-style-type: none; /* Remove list bullets */
-}
-
-nav li {
-    display: block; /* Display links vertically by default */
-}
-
-/* Main section styles */
-main {
+/* mobile **************************/
+header {
+    background-color: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 19px;
+}
+.heading-container {
+    text-align: center; /* Center-align the content */
+}
+
+.horizontal-line {
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+    /*margin-left: 186px;*/
+    /*width: 141%;*/
+
+}
+
+
+nav {
+    background-color: #36454f;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration:overline;
+}
+
+.active {
+    color: yellow;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
 }
 
 .card {
-    background-color: #fff; /* Example card background color */
-    border-radius: 8px; /* Example border radius */
+    background-color: #f0f0f0;
     padding: 20px;
-    margin-bottom: 20px;
+    width: 369px;
+    height: 164px;
+    text-align: center;
+    color: blue;
+    margin-bottom: 50px;
 }
+
 
 /* Footer styles */
 footer {
-    background-color: #333; /* Example footer background color */
-    color: #fff; /* Example footer text color */
+    background-color: #333;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
+
+h2{
+    background-color: blue;
+    color: white;
+}
+
+.custom-list {
+    list-style-type: none; /* Remove the bullet points */
+    text-align: justify;
+    color: black;
+}
+
+.info-item {
+    margin-bottom: 10px; /* Add spacing between each information item */
+}
+
+/* Style the span element for weather and visits */
+.info-item span {
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Change the color of the text */
+}
+
+.lact{
+    background-color: blue;
+    color: white;
+    margin-left: -18px;
+    margin-right: -18px;
+    margin-top: -19px;
+}
+
+.infor{
+
+    background-color: blue;
+    color: white;
+    margin-left: -18px;
+    margin-right: -18px;
+    margin-top: -19px;
+}
+
+
+

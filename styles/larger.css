@@ -1,25 +1,32 @@
 /* larger.css */
 
-@media (min-width: 768px) {
-    /* Adjust styles for larger views */
 
-    /* Flex navigation menu */
-    nav ul {
-        display: flex; /* Display links horizontally */
-    }
 
-    nav li {
-        margin-right: 20px; /* Example spacing between navigation items */
-    }
-
-    /* Main section layout using CSS Grid */
+@media screen and (min-width: 768px) {
     main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        grid-gap: 20px; /* Example gap between grid items */
+        grid-template-columns: 1fr 1fr;
     }
 
     .card {
-        /* Additional styles for larger views */
+        margin-top: 0;
+    }
+
+    .card:nth-child(1) {
+        grid-column: span 2;
+    }
+
+    .card:nth-child(2) {
+        width: calc(90% - 20px);
+    }
+
+    .card:nth-child(3) {
+        width: calc(61% - 20px);
+    }
+
+    .horizontal-line {
+        margin: 0 auto;
+        border-bottom: 1px solid black;
+
+
     }
 }
