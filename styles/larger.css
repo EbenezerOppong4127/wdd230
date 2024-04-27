@@ -39,7 +39,7 @@
 
     h1 {
         font-size: 1rem;
-        text-align: center;
+        margin-left: 28px;
     }
 
     .horizontal-line {
@@ -64,6 +64,9 @@
 
     .flagM{
         display: flow;
+    }
+    header img {
+        width: 93px;
     }
 }
 
