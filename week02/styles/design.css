@@ -20,7 +20,14 @@ h1 {
 
 main {
     display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns with equal width */
+    gap: 20px; /* Gap between grid items */
 }
+
+h2 {
+    grid-column: span 2; /* Spans across both columns */
+}
+
 
 h2 {
     color: navy;
@@ -40,5 +47,10 @@ footer {
     margin-top: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: smaller;
-    text-align: right;
+    text-align: left;
+}
+.banner {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
 }
