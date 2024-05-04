@@ -8,3 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var lastModifiedDate = document.lastModified;
     document.getElementById('lastModified').textContent = "Last modification: " + lastModifiedDate;
 });
+
+
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const mainElement = document.querySelector('header');
+
+    darkModeToggle.addEventListener('click', () => {
+    mainElement.classList.toggle('dark-mode');
+});
