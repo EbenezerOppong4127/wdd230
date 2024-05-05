@@ -2,86 +2,167 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Tro Opong Ebenezer Jules Samuel - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 - Web Frontend Development. Tro Opong Ebenezer Jules Samuel's course assignment portal. Explore learning activities, information, and more.">
-    <meta name="author" content="Tro Opong Ebenezer Jules Samuel">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <meta content="WDD 230 - Web Frontend Development. Tro Opong Ebenezer Jules Samuel's course assignment portal. Explore learning activities, information, and more." name="description">
+    <meta content="Tro Opong Ebenezer Jules Samuel" name="author">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
     <!-- Link to Google Fonts API -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta property="og:title" content="Home Page">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://assets.ldscdn.org/0d/7b/0d7bb93794eb11ecb29ceeeeac1ee20345ef0d4f/church_logo.png">
-    <meta property="og:url" content="https://churchofjesuschrist.org">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <meta content="Home Page" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="https://assets.ldscdn.org/0d/7b/0d7bb93794eb11ecb29ceeeeac1ee20345ef0d4f/church_logo.png" property="og:image">
+    <meta content="https://churchofjesuschrist.org" property="og:url">
 
 
 </head>
 <body>
 <header>
-    <img src="images/moi.png" alt="Ebenezer Oppong" >
-    <span>Bro Ebenezer Oppong</span>
+
 </header>
 
 <button id="menu"></button>
 <nav class="navigation">
     <a href="#" title="Home">Home</a>
-    <a href="#" title="About Us" class="active">About Us</a>
+    <a class="active" href="#" title="About Us">About Us</a>
     <a href="#" title="Service">Services</a>
     <a href="#" title="History">Products</a>
     <a href="#" title="Contact">Contact Us</a>
 </nav>
 
-<h2>About Us</h2>
-<div class="stuff"></div>
-
-
 <main>
-    <h1>WDD 230: Web Frontend Development</h1>
-    <div class="horizontal-line"></div>
-    <div class="container">
-        <section class="card">
-            <h2 class="lact">Learning Activities</h2>
-            <ul class="custom-list">
-                <li>Week 1 : <span>Layout</span> | <span>Media Query</span> | <span>JS Pen</span> </li>
-                <li>Week 2</li>
-                <li>Week 3</li>
-                <li>Week 4</li>
-                <li>Week 5</li>
-                <li>Week 6</li>
-            </ul>
+    <section id="hero-image">
+        <!-- Hero image goes here -->
+        <section class="section-main spacing-130-160 mobile-40-60 position-relative overflow-hidden">
+            <div class="position-absolute _5"></div>
+            <div class="section-wrapper">
+                <div class="container-medium">
+                    <div class="flexbox justify-space-between mobile-vertical">
+                        <div class="margin-box top-70">
+                            <div class="max-width-500 max-width-full-mobile mobile-text-align-center">
+                                <div class="flexbox align-center mobile-align-end">
+                                    <div class="margin-box left-5 mobile-top-5">
+                                        <img alt="" height="" loading="lazy" sizes="130px" src="images/pic4.png">
+
+                                    </div>
+                                </div>
+                                <h1>The business software for designers</h1>
+                                <div class="margin-box _40-0 mobile-20-20">
+                                    <div class="max-width-420"><p class="mobile-text-align-center">Whether you design websites or apps, Bonsai takes the stress out of running your business. Win clients, get paid, and track your finances. Start a 7-day free trial via the link below to get an exclusive discount.</p>
+                                        <div class="margin-box top-40"><a class="button w-button" href="##">Get 30% off</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="margin-box top-0 hide-mobile">
+                            <div class="hero-image-wrapper-persona" style="background-image:url(images/pic1.webp)">
+
+                                <img alt="Leave" class="image-absolute _31" loading="lazy" src="images/pic2.webp" style="width: 211px;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="card">
-            <h2 class="infor">Information</h2>
-            <p class="customP">Abidjan , Côte d'Ivoire</p>
-            <p class="customP">76*F -Sunshine</p>
-            <p class="customP">Page Visits : 26</p>
-        </section>
-    </div>
+    </section>
+
+    <section id="call-to-action">
+
+        <div class="container-medium background-color-white z-index-1">
+            <div class="personas-tools-wrapper">
+                <div class="w-layout-grid grid _3col gap-150 mobile-22">
+                    <div class="flexbox vertical gap-17 mobile-landscape horizontal">
+                        <img alt="" loading="lazy" src="images/bk1.svg">
+                        <div><h5 class="margin-box _0-0-0-0">Billing &amp; Time-tracking</h5>
+                            <div class="margin-box top-20 mobile-5"><p class="text-align-left">Automatically invoice all your billable hours.</p></div>
+                        </div>
+                    </div>
+                    <div class="flexbox vertical gap-17 mobile-landscape horizontal">
+                        <img alt="" loading="lazy" src="images/bk1.svg">
+                        <div><h5 class="margin-box _0-0-0-0">Forms</h5>
+                            <div class="margin-box top-20 mobile-5">
+                                <p class="text-align-left">Bring new leads in your CRM and onboard your clients.</p></div>
+                        </div>
+                    </div>
+                    <div class="flexbox vertical gap-17 mobile-landscape horizontal">
+                        <img alt="" loading="lazy" src="images/bk1.svg">
+                        <div><h5 class="margin-box _0-0-0-0">Client portal</h5>
+                            <div class="margin-box top-20 mobile-5"><p class="text-align-left">A simple way for you and your clients to share information.</p></div>
+                        </div>
+                    </div>
+                    <div class="flexbox vertical gap-17 mobile-landscape horizontal"><img alt="" loading="lazy" src="images/bk1.svg">
+                        <div><h5 class="margin-box _0-0-0-0">Proposals</h5>
+                            <div class="margin-box top-20 mobile-5"><p class="text-align-left">Impress your leads with proposals created in seconds.</p></div>
+                        </div>
+                    </div>
+                    <div class="flexbox vertical gap-17 mobile-landscape horizontal"><img alt="" loading="lazy" src="images/bk1.svg">
+                        <div><h5 class="margin-box _0-0-0-0">Contracts</h5>
+                            <div class="margin-box top-20 mobile-5"><p class="text-align-left">Protect your business with pre-made templates written by lawyers.</p></div>
+                        </div>
+                    </div>
+                    <div class="flexbox vertical gap-17 mobile-landscape horizontal"><img alt="" loading="lazy" src="images/bk1.svg">
+                        <div><h5 class="margin-box _0-0-0-0">Finance tracking</h5>
+                            <div class="margin-box top-20 mobile-5"><p class="text-align-left">Keep track of your business’s financial health.</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="current-events">
+        <!-- Current events content goes here -->
+
+        <div class="container-medium position-relative">
+            <img alt="Leave" class="image-absolute _12" loading="lazy" src="images/pic2.webp" width="156">
+            <div class="flexbox align-center justify-space-around mobile-vertical">
+                <img alt="" class="image _2" loading="lazy" sizes="(max-width: 479px) 82vw, (max-width: 767px) 76vw, (max-width: 991px) 46vw, 47vw" src="images/pic3.webp">
+                <div class="max-width-390 max-width-full-mobile-landscape">
+                    <div class="flexbox vertical align-start gap-20 position-relative">
+                        <div class="position-relative">
+                            <h4>Need help? We’ll<br>be right with you</h4>
+                        </div>
+                        <p>Our friendly, speedy, Customer Support has all the answers and is here to help you.</p><a class="text-size-14 text-color-light-green underlined" href="/support"><strong class="hover-underline-animation">Contact us</strong></a>
+                        <div class="separator _50 mobile-10"></div>
+                        <h4>Quick to set up<br>Even easier to use</h4>
+                        <p>You get 7 days to try it for free.&nbsp;And if it's not what you expected, we guarantee your money back within the first two weeks.</p><a class="button w-button" href="https://app.hellobonsai.com/users/partners?fpr=dribbble">Get started</a></div>
+                </div>
+            </div>
+            <div class="margin-box top-120 mobile-60">
+                <div class="banner small mobile-banner">
+                    <div class="container-medium mobile-banner">
+                        <div class="flexbox align-center justify-space-between gap-20 mobile-vertical">
+                            <a class="button is-medium w-button" href="https://app.hellobonsai.com/users/partners?fpr=dribbble">demoooo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="weather-card">
+        <!-- Weather card content goes here -->
+    </section>
+
+    <section id="company-spotlights">
+        <!-- Company spotlights content goes here -->
+    </section>
 </main>
 
-
-
-
 <footer>
-    <p>
-        &copy; <span id="currentYear"></span>
-
-        <img alt="flower_one" class="flower" src="images/flower.png"> Tro Opong Ebenezer Jules <img class="flower" src="images/flower.png" alt="flower_two">
-
-        <span class="flagM">Côte d'Ivoire <img alt="flag" class="flag" src="images/flag.png"></span>
-
-    </p>
-    <p id="lastModified"></p>
+    <!-- Footer content goes here -->
+    <!--    https://carlsbad.org/-->
 </footer>
 
-<!-- External JavaScript or internal scripts here -->
 
 <script src="scripts/scripts.js"></script>
 </body>
