@@ -378,7 +378,6 @@ nav {
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
 html,
 body {
     background-color: #F3F3F3;
@@ -534,22 +533,6 @@ tr:nth-child(3) {
     color: #999;
 }
 
-@-webkit-keyframes up {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(15px);
-    }
-    50% {
-        opacity: 0;
-        -webkit-transform: translateY(15px);
-    }
-    99% {
-        -webkit-animation-play-state: paused;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 .txt-gr{
     display: inline-grid;
 }
