@@ -7,10 +7,20 @@ hamButton.addEventListener('click', () => {
 });
 
 $(document).ready(function() {
-    var carousel = $('.carousel');
-    var carouselWidth = $('.carousel').outerWidth();
-    var itemWidth = $('.carousel-item').outerWidth(true);
-    var currentPosition = 0;
+    // Store carousel jQuery object
+    const carousel = $('.carousel');
+
+    // Store carousel items jQuery object
+    const carouselItems = $('.carousel-item');
+
+    // Get carousel width
+    const carouselWidth = carousel.outerWidth();
+
+    // Get item width
+    const itemWidth = carouselItems.outerWidth(true);
+
+    // Initialize currentPosition variable
+    let currentPosition = 0;
 
     // Function to slide the carousel to the left
     function slideLeft() {
@@ -47,6 +57,7 @@ $(document).ready(function() {
         slideInterval = setInterval(slideLeft, 3000);
     });
 });
+
 $(document).ready(function() {
     // Click events for navigation buttons
     $('.next').click(function() {
