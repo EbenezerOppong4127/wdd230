@@ -25,7 +25,7 @@
 </head>
 <body>
 <header>
-    <img src="images/moi.png" alt="Ebenezer Oppong" >
+    <img src="images/moi.webp" alt="Ebenezer Oppong" >
     <span>Bro Ebenezer Oppong</span>
     <button id="darkModeToggle" class="btn-dark">Dark Mode</button>
 </header>
@@ -41,7 +41,28 @@
         </ul>
 </nav>
 
+<div class="hero">
+    <!--        <picture>-->
+    <!--            <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/1280x800/yigo_guam_temple_2.jpg" alt="Yigo Guam Temple - 2022">-->
+    <!--        </picture>-->
+    <!-- Mobile image -->
+ <picture>
+     <source media="(max-width: 400px)" srcset="images/rendering_abidjan_ivory_coast_temple-small.webp">
+     <!-- Larger view image -->
+     <source media="(min-width: 401px) and (max-width: 960px) and (orientation: landscape)" srcset="images/rendering_abidjan_ivory_coast_temple-medium.webp">
+     <!-- Fallback for non-supporting browsers -->
+     <img src="images/rendering_abidjan_ivory_coast_temple.webp" alt="Abidjan , Côte d'Ivoire Latter-day Temple" >
+ </picture>
+    <div class="herolabel">
+        <p>Abidjan , Côte d'Ivoire</p>
+    </div>
+
+</div>
+
+
 <main>
+
+
     <h1>WDD 230: Web Frontend Development</h1>
     <div class="horizontal-line"></div>
     <div class="container">
@@ -49,8 +70,8 @@
             <h2 class="lact">Learning Activities</h2>
             <ul class="custom-list">
                 <li>Week 1 : <span>Layout</span> | <span>Media Query</span> | <span>JS Pen</span> </li>
-                <li>Week 2</li>
-                <li>Week 3</li>
+                <li>Week 2 :  <span>Design</span> | <span>Menu</span> | <span>BOM-25</span> </li>
+                <li>Week 3 :  <span>WebP</span> | <span>Lazy</span> | <span>srcset</span> </li>
                 <li>Week 4</li>
                 <li>Week 5</li>
                 <li>Week 6</li>
@@ -60,10 +81,19 @@
             <h2 class="infor">Information</h2>
             <p class="customP">Abidjan , Côte d'Ivoire</p>
             <p class="customP">76*F -Sunshine</p>
-            <p class="customP">Page Visits : 26</p>
+            <p class="customP">Page Visits: <span id="visitCount">0</span></p>
         </section>
+        <div>
+
+            <!--            <img loading="lazy" src="image.jpg" alt="..." />-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15888.120181041557!2d-3.97764885!3d5.412394899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sci!4v1715541384222!5m2!1sen!2sci"  height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame-map"></iframe>
+
+        </div>
     </div>
+
 </main>
+
+
 
 
 
@@ -72,16 +102,16 @@
     <p>
         &copy; <span id="currentYear"></span>
 
-        <img alt="flower_one" class="flower" src="images/flower.png"> Tro Opong Ebenezer Jules <img class="flower" src="images/flower.png" alt="flower_two">
+        <img alt="flower_one" class="flower" src="images/flower.webp"> Tro Opong Ebenezer Jules <img class="flower" src="images/flower.webp" alt="flower_two">
 
-        <span class="flagM">Côte d'Ivoire <img alt="flag" class="flag" src="images/flag.png"></span>
+        <span class="flagM">Côte d'Ivoire <img alt="flag" class="flag" src="images/flag.webp"></span>
 
     </p>
     <p id="lastModified"></p>
 </footer>
 
 <!-- External JavaScript or internal scripts here -->
-
+<script src="scripts/jquery.js"></script>
 <script src="scripts/getDates.js"></script>
 </body>
 </html>
