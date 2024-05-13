@@ -45,3 +45,23 @@ hamButton.addEventListener('click', () => {
     $(document).ready(function() {
     updateVisitCounter();
 });
+
+
+    document.addEventListener("DOMContentLoaded", (event) => {
+    const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+    const iframe = document.createElement("iframe");
+    iframe.src = entry.target.dataset.src;
+
+    entry.target.appendChild(iframe);
+    observer.unobserve(entry.target);
+}
+});
+});
+
+    const lazyLoadMapElements = document.querySelectorAll(".lazy");
+    lazyLoadMapElements.forEach((element) => {
+    observer.observe(element);
+});
+});
