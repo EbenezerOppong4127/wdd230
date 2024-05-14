@@ -761,7 +761,7 @@ body {font-family: Verdana, sans-serif;}
 
 /* Style the header */
 .to-do-header {
-    background-color: #f44336;
+    background-color: black;
     padding: 30px 40px;
     color: white;
     text-align: center;
