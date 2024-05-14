@@ -16,18 +16,25 @@ $(document).ready(function() {
     });
 
     // Create a new list item when clicking on the "Add" button
-    $("#to-do-addBtn").click(function() {
-        var inputValue = $("#to-do-myInput").val();
-        if (inputValue === '') {
-            alert("You must write something!");
-        } else {
-            var li = $("<li>").text(inputValue);
-            $("#myUL").append(li);
-            var span = $("<span class='close'>&times;</span>");
-            li.append(span);
-        }
-        $("#to-do-myInput").val("");
+    $(document).ready(function() {
+        var toDoAddBtn = $("#to-do-addBtn");
+        var toDoInput = $("#to-do-myInput");
+        var myUL = $("#myUL");
+
+        toDoAddBtn.click(function() {
+            var inputValue = toDoInput.val();
+            if (inputValue === '') {
+                alert("You must write something!");
+            } else {
+                var li = $("<li>").text(inputValue);
+                myUL.append(li);
+                var span = $("<span class='close'>&times;</span>");
+                li.append(span);
+            }
+            toDoInput.val("");
+        });
     });
+
 });
 
 
