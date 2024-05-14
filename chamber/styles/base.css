@@ -492,3 +492,345 @@ div {
     }
 }
 
+/*Discover*/
+
+/* Existing styles */
+/* Add or modify rules and declarations as needed */
+
+/* Grid layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 3fr); /* Adjust the widths as needed */
+    grid-gap: 20px;
+}
+
+.sidebar {
+    /* Styles for sidebar */
+}
+
+.main-content {
+    /* Styles for main content area */
+}
+
+/* Lazy loading */
+.image-gallery img {
+    opacity: 0; /* Initially hide images */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+/* Image hover effect */
+.image-gallery img:hover {
+    /* Add your desired hover effect */
+    transform: scale(1.1); /* Example: Scale up image on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    /* Mobile view */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
+
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+
+
+/*Code Getting */
+
+
+
+
+/* Header/Blog Title */
+/*.header {*/
+/*    padding: 30px;*/
+/*    font-size: 40px;*/
+/*    text-align: center;*/
+/*    background: white;*/
+/*}*/
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    /*padding: 20px;*/
+}
+
+/* Add a card effect for articles */
+.card-discover {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*!* Footer *!*/
+/*.footer {*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*    background: #ddd;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+
+/*Code Getting */
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+.to-do-ul ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+.to-do-ul ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+.to-do-ul ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+.to-do-ul ul li:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+.to-do-ul ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+.to-do-ul ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.to-do-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.to-do-close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Style the header */
+.to-do-header {
+    background-color: #f44336;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+/* Clear floats after the header */
+.to-do-header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+.to-do-input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 60%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+/* Style the "Add" button */
+.to-do-addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.to-do-addBtn:hover {
+    background-color: #bbb;
+}
+.fakeimg {
+    height: 220px; /* Set the height of the container */
+    overflow: hidden; /* Hide any overflow from the image */
+}
+
+.fakeimg img {
+    width: 100%; /* Set the width of the image to fill the container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    display: block; /* Ensure the image behaves as a block element */
+}
+
+.main-txt-dis{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    font-stretch: extra-condensed;
+    font-family: ui-monospace;
+}
+
+.main-txt-dis-txt{
+    font-size: 19px;
+
+    font-family: serif;
+    font-style: italic;
+}
+
+
+.user-disc-mes{
+    text-align: center;
+    margin-top: 28px;
+    font-size: 21px;
+    font-family: emoji;
+}
