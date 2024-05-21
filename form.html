@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Link to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Form Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://assets.ldscdn.org/0d/7b/0d7bb93794eb11ecb29ceeeeac1ee20345ef0d4f/church_logo.png">
+    <meta property="og:url" content="https://churchofjesuschrist.org">
+</head>
+<body>
+<header>
+    <img src="images/moi.webp" alt="Ebenezer Oppong" >
+    <span>Bro Ebenezer Oppong</span>
+    <button id="darkModeToggle" class="btn-dark">Dark Mode</button>
+</header>
+
+
+<button id="menu"></button>
+<nav class="navigation">
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Chamber</a></li>
+        <li><a href="#">Site Plan</a></li>
+        <li><a href="#">Form</a></li>
+    </ul>
+</nav>
+
+<main style="margin-bottom: 61px;">
+    <form class="custom-form" action="record.html" method="get">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="Password must be at least 8 characters long and alpha-numeric">
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <span id="password-message"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address">
+
+        <label for="rating">Page Rating:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="document.getElementById('rating-value').textContent=value">
+        <span id="rating-value">5</span>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+
+<footer>
+    <p>
+        &copy; <span id="currentYear"></span>
+
+        <img alt="flower_one" class="flower" src="images/flower.webp"> Tro Opong Ebenezer Jules <img class="flower" src="images/flower.webp" alt="flower_two">
+
+        <span class="flagM">Côte d'Ivoire <img alt="flag" class="flag" src="images/flag.webp"></span>
+
+    </p>
+    <p id="lastModified"></p>
+</footer>
+
+<!-- External JavaScript or internal scripts here -->
+<script src="scripts/form.js"></script>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/getDates.js"></script>
+</body>
+</html>

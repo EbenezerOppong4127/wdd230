@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.custom-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.custom-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.custom-form input,
+.custom-form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+.custom-form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-form button:hover {
+    background-color: #0056b3; /* Slightly darkened primary color */
+}
+
+.custom-form #password-message {
+    color: red;
+}
+
+.custom-form #rating-value {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
