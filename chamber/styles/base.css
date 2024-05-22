@@ -872,3 +872,159 @@ body {font-family: Verdana, sans-serif;}
     }
 }
 
+
+
+.la-form{
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+.le-corps {
+
+}
+
+.main-container.join-chamber-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+@media (min-width: 768px) {
+    .main-container.join-chamber-custom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.cube.join-chamber-custom {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.cube h2.join-chamber-custom {
+    margin-bottom: 10px;
+}
+
+.login_register.join-chamber-custom {
+    display: flex;
+    width: 100%;
+    border: 1px solid rgba(221, 221, 221, 1);
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.login_register a.join-chamber-custom {
+    font-size: 1em;
+    padding: 10px 55px;
+    border: none;
+    width: 50%;
+    text-align: center;
+}
+
+.login_register a.login.join-chamber-custom {
+    border-radius: 15px;
+    background-color: transparent;
+    color: black;
+}
+
+.login_register a.register.join-chamber-custom {
+    border-radius: 15px;
+    background: linear-gradient(90deg, #003A74, #006AD5);
+    color: white;
+}
+
+.form.join-chamber-custom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Ensuring sufficient contrast for input fields */
+.form.join-chamber-custom input.join-chamber-custom,
+.form.join-chamber-custom select.join-chamber-custom,
+.form.join-chamber-custom textarea.join-chamber-custom {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #DDDDDD;
+    color: #333333; /* Darker text color for better contrast */
+    background-color: #FFFFFF; /* Light background color */
+    font-family: "Roboto Mono", sans-serif;
+    box-shadow: 1px 5px 9px rgba(211, 211, 211, .7);
+    margin-bottom: 15px;
+}
+
+/* Example for specific input field, though the above rule already covers it */
+input#first-name.join-chamber-custom {
+    color: #333333; /* Darker text color for better contrast */
+    background-color: #FFFFFF; /* Light background color */
+}
+
+
+.fp.join-chamber-custom {
+    width: 100%;
+    display: flex;
+    color: #5881D0;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.login_btn.join-chamber-custom {
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    background-color: #003A74;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(-90deg, #003A74, #006AD5);
+    box-shadow: 1px 5px 9px rgba(211, 211, 211, .9);
+}
+
+.benefits.join-chamber-custom {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 1px 5px 9px rgba(211, 211, 211, .7);
+}
+
+.benefits.join-chamber-custom h3.join-chamber-custom {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefits.join-chamber-custom ul.join-chamber-custom {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits.join-chamber-custom li.join-chamber-custom {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.benefits.join-chamber-custom li.join-chamber-custom::before {
+    content: "•";
+    color: #003A74;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
