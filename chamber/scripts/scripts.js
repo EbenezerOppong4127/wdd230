@@ -119,3 +119,13 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+    // Get the current date and time
+    var currentDate = new Date();
+    // Format the date as needed (e.g., ISO string)
+    var timestamp = currentDate.toISOString();
+    // Set the value of the hidden field
+    $('#timestamp').val(timestamp);
+});
+
+
