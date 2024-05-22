@@ -870,6 +870,9 @@ body {font-family: Verdana, sans-serif;}
         margin-left: 129px;
         margin-top: 14px;
     }
+    .le-corps {
+        margin-left: 337px !important;
+    }
 }
 
 
@@ -881,7 +884,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .le-corps {
-
+    margin-left: 337px !important;
 }
 
 .main-container.join-chamber-custom {

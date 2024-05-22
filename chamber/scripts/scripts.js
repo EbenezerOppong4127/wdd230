@@ -90,4 +90,32 @@ $(document).ready(function() {
     }
 });
 
+$(document).ready(function() {
+    // Function to detect mobile devices
+    function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    // Remove 'le-corps' class if on mobile device
+    if (isMobileDevice()) {
+        $('.main-container').removeClass('le-corps');
+    }
+});
+$(document).ready(function() {
+    // Function to check if the screen width is below a certain threshold
+    function checkScreenSize() {
+        if ($(window).width() <= 768) { // Assuming mobile screen size threshold
+            $('.main-container').removeClass('le-corps');
+        }
+    }
+
+    // Initial check
+    checkScreenSize();
+
+    // Check again if the window is resized
+    $(window).resize(function() {
+        checkScreenSize();
+    });
+});
+
 
