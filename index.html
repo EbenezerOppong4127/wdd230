@@ -77,10 +77,11 @@
                 <li>Week 6</li>
             </ul>
         </section>
-        <section class="card">
+        <section class="card weather-card">
             <h2 class="infor">Information</h2>
-            <p class="customP">Abidjan , Côte d'Ivoire</p>
-            <p class="customP">76*F -Sunshine</p>
+            <p  class="customP">Abidjan , Côte d'Ivoire</p>
+            <p id="temperature" class="customP">76*F - <span id="description"></span></p>
+            <img id="weather-icon" src="" alt="Weather icon">
             <p class="customP">Page Visits: <span id="visitCount">0</span></p>
         </section>
         <div>
@@ -113,5 +114,9 @@
 <!-- External JavaScript or internal scripts here -->
 <script src="scripts/jquery.js"></script>
 <script src="scripts/getDates.js"></script>
+<script src="scripts/links.js"></script>
+<script src="scripts/weather.js"></script>
+
+
 </body>
 </html>
