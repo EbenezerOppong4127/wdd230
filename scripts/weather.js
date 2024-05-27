@@ -10,7 +10,6 @@ async function fetchWeather() {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`);
         if (!response.ok) {
-            throw new Error(`Error: ${response.status} ${response.statusText}`);
         }
         const data = await response.json();
         displayWeather(data);
@@ -21,7 +20,7 @@ async function fetchWeather() {
 }
 
 function displayWeather(data) {
-    temperature.textContent = ` ${data.main.temp}°C -`;
+    temperature.textContent = `${data.main.temp}°C`;
     description.textContent = data.weather[0].description;
     weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.alt = data.weather[0].description;
