@@ -22,8 +22,15 @@
 
 
 }
+.wether-stlying {
+    display: inline-flex ;margin-left: 165px;
+}
 
 @media only screen and (max-width: 600px) {
+
+    .wether-stlying {
+        display: inline-flex ;margin-left: 46px;
+    }
     .frame-map{
         border: 0;
         width: 93% !important;
