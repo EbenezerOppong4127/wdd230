@@ -1,3 +1,7 @@
+const temperature = document.getElementById('temperature');
+const description = document.getElementById('description');
+const weatherIcon = document.getElementById('weather-icon');
+
 const apiKey = '694abba7310ecc34f4bc3493b430a458'; // Replace with your OpenWeatherMap API key
 const lat = 5.345317; // Latitude for Abidjan
 const lon = -4.024429; // Longitude for Abidjan
@@ -17,25 +21,23 @@ async function fetchWeather() {
 }
 
 function displayWeather(data) {
-    const temperature = document.getElementById('temperature');
-    const description = document.getElementById('description');
-    const weatherIcon = document.getElementById('weather-icon');
-
-    temperature.textContent = `Temperature: ${data.main.temp}°C`;
+    temperature.textContent = ` ${data.main.temp}°C -`;
     description.textContent = data.weather[0].description;
     weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     weatherIcon.alt = data.weather[0].description;
+
+    console.log('Temperature:', data.main.temp, '°C');
+    console.log('Description:', data.weather[0].description);
+    console.log('Weather Icon URL:', weatherIcon.src);
 }
 
 function displayError(error) {
-    const temperature = document.getElementById('temperature');
-    const description = document.getElementById('description');
-    const weatherIcon = document.getElementById('weather-icon');
-
     temperature.textContent = 'Temperature: N/A';
     description.textContent = 'Could not retrieve weather data';
     weatherIcon.src = '';
     weatherIcon.alt = 'No weather icon available';
+
+    console.error('Fetch Error:', error);
 }
 
 fetchWeather();
