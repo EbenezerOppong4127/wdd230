@@ -3,16 +3,38 @@
     {
       "week": "Week 1",
       "links": [
-        { "url": "week1/activity1.html", "title": "Activity 1" },
-        { "url": "week1/activity2.html", "title": "Activity 2" }
+        { "url": "week1/activity1.html", "title": "Layout" },
+        { "url": "week1/activity2.html", "title": "Media Query" },
+        { "url": "week1/activity3.html", "title": "JS Pen" }
       ]
     },
     {
       "week": "Week 2",
       "links": [
-        { "url": "week2/activity1.html", "title": "Activity 1" },
-        { "url": "week2/activity2.html", "title": "Activity 2" }
+        { "url": "week2/activity1.html", "title": "Design" },
+        { "url": "week2/activity2.html", "title": "Menu" },
+        { "url": "week2/activity3.html", "title": "BOM-25" }
       ]
+    },
+    {
+      "week": "Week 3",
+      "links": [
+        { "url": "week3/activity1.html", "title": "WebP" },
+        { "url": "week3/activity2.html", "title": "Lazy" },
+        { "url": "week3/activity3.html", "title": "srcset" }
+      ]
+    },
+    {
+      "week": "Week 4",
+      "links": []
+    },
+    {
+      "week": "Week 5",
+      "links": []
+    },
+    {
+      "week": "Week 6",
+      "links": []
     }
   ]
 }

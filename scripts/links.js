@@ -1,33 +1,50 @@
-const baseURL = 'https://ebenezeroppong4127.github.io/wdd230'; // Replace with your GitHub Pages URL
+const baseURL = 'https://ebenezeroppong4127.github.io/wdd230'; // Your GitHub Pages URL
 const linksURL = `${baseURL}/data/links.json`;
 
 async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    displayLinks(data.weeks);
+    try {
+        const response = await fetch(linksURL);
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+        const data = await response.json();
+        displayLinks(data.weeks);
+    } catch (error) {
+        console.error('Fetch Error:', error);
+    }
 }
 
 function displayLinks(weeks) {
-    const container = document.getElementById('activity-links');
+    const container = document.querySelector('.custom-list');
+    if (!container) {
+        console.error('No element with class "custom-list" found in the DOM');
+        return;
+    }
     container.innerHTML = ''; // Clear existing content
 
     weeks.forEach(week => {
-        const weekTitle = document.createElement('h3');
-        weekTitle.textContent = week.week;
-        container.appendChild(weekTitle);
+        const listItem = document.createElement('li');
+        listItem.textContent = `${week.week} : `;
 
-        const linksList = document.createElement('ul');
-        week.links.forEach(link => {
-            const listItem = document.createElement('li');
+        const spanList = document.createElement('span');
+        week.links.forEach((link, index) => {
+            const span = document.createElement('span');
             const anchor = document.createElement('a');
-            anchor.href = link.url;
+            anchor.href = `${baseURL}/${link.url}`;
             anchor.textContent = link.title;
-            listItem.appendChild(anchor);
-            linksList.appendChild(listItem);
-        });
+            span.appendChild(anchor);
+            spanList.appendChild(span);
 
-        container.appendChild(linksList);
+            // Add separator if it's not the last link
+            if (index < week.links.length - 1) {
+                const separator = document.createTextNode(' | ');
+                spanList.appendChild(separator);
+            }
+        });
+        listItem.appendChild(spanList);
+
+        container.appendChild(listItem);
     });
 }
 
-getLinks();
+document.addEventListener('DOMContentLoaded', getLinks);
