@@ -35,9 +35,9 @@ fetch(membersURL)
             img.classList.add("directoring-img");
             section.appendChild(img);
 
-            var h3 = document.createElement('h3');
-            h3.textContent = company.name;
-            section.appendChild(h3);
+            var h2 = document.createElement('h2');
+            h2.textContent = company.name;
+            section.appendChild(h2);
 
             var pAddress = document.createElement('p');
             pAddress.textContent = company.address;

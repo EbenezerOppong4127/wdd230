@@ -4,7 +4,7 @@
     "address": "123 Main St, City, Country",
     "phone": "+1234567890",
     "website": "http://www.companya.com",
-    "image": "companyA_logo.png",
+    "image": "images/directory/camplogo1.webp",
     "membership_level": "Gold",
     "other_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
   },
