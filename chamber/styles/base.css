@@ -1031,3 +1031,116 @@ input#first-name.join-chamber-custom {
     line-height: 1;
 }
 
+
+
+
+/*/directory*/
+
+/* Add your CSS styles here */
+
+/* * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }*/
+
+.directoring-main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+    background-color: #fff;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.directoring-menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #bed;
+    text-align: center;
+}
+
+.directoring-menu button {
+    padding: 1rem;
+    font-weight: 700;
+}
+
+.directoring-section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+.directoring-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.directoring-grid .directoring-section {
+    text-align: center;
+}
+
+.directoring-grid img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+}
+
+.directoring-grid .directoring-section > * {
+    margin: 0.1rem;
+}
+
+.directoring-grid h3 {
+    font-family: "Caveat", cursive;
+}
+
+.directoring-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.directoring-list .directoring-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.directoring-list .directoring-section > * {
+    margin: 0 1rem;
+}
+
+.directoring-list .directoring-section img {
+    display: none; /* smaller viewports only */
+}
+
+.directoring-list .directoring-section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.directoring-list .directoring-section:nth-child(even) {
+    background-color: #bed;
+}
+
+.directoring-section h3 {
+    font-size: 1.5rem;
+}
+
+.directoring-section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+.directoring-section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
+}
+
+.directoring-img {
+    height: 75px;
+    max-width: 100%; /* Images are jerks - Seattle*/
+}
