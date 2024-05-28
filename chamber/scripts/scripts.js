@@ -133,7 +133,8 @@ $(document).ready(function() {
 
 const baseURL = 'https://ebenezeroppong4127.github.io/wdd230'; // Your GitHub Pages URL
 const membersURL = `${baseURL}/data/members.json`;
-
+alert(membersURL)
+console(membersURL)
 fetch(membersURL)
     .then(response => response.json())
     .then(data => {
