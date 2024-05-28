@@ -129,3 +129,49 @@ $(document).ready(function() {
 });
 
 
+
+
+const baseURL = 'https://ebenezeroppong4127.github.io/wdd230'; // Your GitHub Pages URL
+const membersURL = `${baseURL}/data/members.json`;
+
+fetch(membersURL)
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(company => {
+            var section = document.createElement('section');
+
+            var img = document.createElement('img');
+            img.src = company.image;
+            img.alt = company.name;
+            section.appendChild(img);
+
+            var h3 = document.createElement('h3');
+            h3.textContent = company.name;
+            section.appendChild(h3);
+
+            var pAddress = document.createElement('p');
+            pAddress.textContent = company.address;
+            section.appendChild(pAddress);
+
+            var pPhone = document.createElement('p');
+            pPhone.textContent = company.phone;
+            section.appendChild(pPhone);
+
+            var aWebsite = document.createElement('a');
+            aWebsite.href = company.website;
+            aWebsite.textContent = 'Website';
+            aWebsite.target = '_blank';
+            section.appendChild(aWebsite);
+
+            var pMembership = document.createElement('p');
+            pMembership.textContent = 'Membership Level: ' + company.membership_level;
+            section.appendChild(pMembership);
+
+            var pOtherInfo = document.createElement('p');
+            pOtherInfo.textContent = company.other_information;
+            section.appendChild(pOtherInfo);
+
+            document.querySelector('.grid').appendChild(section);
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
