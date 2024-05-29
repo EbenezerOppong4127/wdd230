@@ -524,7 +524,7 @@ tr:nth-child(3) td:nth-child(5) {
     padding-bottom: 7px;
     -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .9s;
 }
-G
+
 tr:nth-child(2),
 tr:nth-child(3) {
     font-size: .9em;
