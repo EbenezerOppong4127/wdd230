@@ -19,6 +19,12 @@ function showList() {
     display.classList.remove("directoring-grid");
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    var lastModifiedElement = document.getElementById("last-modified");
+    var lastModified = new Date(document.lastModified);
+    lastModifiedElement.textContent = lastModified.toDateString();
+});
+
 const baseURL = 'https://ebenezeroppong4127.github.io/wdd230'; // Your GitHub Pages URL
 const membersURL = `${baseURL}/chamber/data/members.json`;
 
@@ -66,3 +72,12 @@ fetch(membersURL)
     })
     .catch(error => console.error('Error fetching data:', error));
 
+
+    $(document).ready(function() {
+    var currentUrl = window.location.href;
+    $('.navigation a').each(function() {
+    if (this.href === currentUrl) {
+    $(this).addClass('active');
+}
+});
+});

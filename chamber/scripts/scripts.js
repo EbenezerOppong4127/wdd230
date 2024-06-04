@@ -129,5 +129,14 @@ $(document).ready(function() {
 });
 
 
+    $(document).ready(function() {
+    var currentUrl = window.location.href;
+    $('.navigation a').each(function() {
+    if (this.href === currentUrl) {
+    $(this).addClass('active');
+}
+});
+});
+
 
 
